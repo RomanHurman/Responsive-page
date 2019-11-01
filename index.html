@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+      * {
+    box-sizing: border-box;
+    }
+
+    header {
+    background-color: #4aacc5;
+    height: 100px;
+    border: 1px solid black;
+    padding-top: 20px; 
+    }
+
+    .text {
+    padding-left: 20px;
+    color: white;
+    }
+
+    @media (max-width: 450px)  {
+    header {
+    background-color: lightblue;
+    }
+
+    .item1, .item3 {
+    display: none;
+    }
+    }
+
+    @media (max-width: 800px) and (min-width: 500px) {
+    header {
+    background-color: lightblue;
+    }
+
+    .text {
+    margin-right: 620px;
+
+    }
+
+    .item1 {
+    margin-right: 15px;
+    }
+
+    .item3 {
+    display: none;
+    }
+
+    .right {
+    display: none;
+    }
+    }
+
+
+    @media (min-width: 1200px) {
+    .left, .right {
+    display: none;
+    }
+    }
+
+    .container-fluid {
+    display: flex;
+    justify-content: space-between;
+
+    }
+
+    .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 2px;
+    height: 370px;
+    }
+
+    .item1, .item3 {
+    height: 250px;
+    width: 200px;
+    background-color: #d9d9d9;
+    text-align: center;
+    padding-top: 80px;
+    text-transform: capitalize; 
+    }
+
+    .item2 {
+    height: 250px;
+    width: 900px;
+    background-color: #d9d9d9;
+    text-align: center;
+    padding-top: 80px;
+    text-transform: capitalize;
+    }
+
+    .left1, .left2, .left3 {
+    width: 60px;
+    height: 8px;
+    padding-top: 7px;
+    background-color: white;
+    margin: 6px;
+    border: 1px solid black;
+    }
+
+    .right1, .right2, .right3 {
+    width: 60px;
+    height: 8px;
+    padding-bottom: 7px;
+    background-color: white;
+    margin: 5px;
+    border: 1px solid black;
+    }
+</style>
+<body>
+        <header>
+        <div class="container-fluid">
+        <div class="left">
+        <div class="left1"></div>
+        <div class="left2"></div>
+        <div class="left3"></div>  
+        </div>
+        <p class="text">Marta</p>
+        <div class="right">
+        <div class="right1"></div>
+        <div class="right2"></div>
+        <div class="right3"></div>
+        </div>
+        </div>
+        </header>
+        <nav>
+        <div class="container">
+        <div class="item1">Left<br>side<br>navigation<br>pannel</div>
+        <div class="item2">Bananka</div>
+        <div class="item3">Right<br>side<br>navigation<br>pannel</div>
+        </div>
+        </nav>
+</body>
+</html>
